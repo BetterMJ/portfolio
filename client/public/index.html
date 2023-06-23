@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="hiddenV">
       <a href="#home" id="logo">
         <i class="fa-solid fa-code"></i>
       </a>
@@ -80,29 +80,31 @@
             <span class="list-number">04. </span><a href="#contact">Contact</a>
           </div>
         </div>
+
       <div id="home">
-        <h1 class="typed-text hidden">
+        <h1 class="typed-text">
           <span id="typed-text"></span><span class="underscore_blink">_</span>
         </h1>
-        <p class="hidden home-p">
+        <p class="home-p hiddenOp">
           My expertise lies in building and occasionally designing software that
           delights users and solves complex problems. <br />
         </p>
-        <div class="explore hidden">
+        <div class="explore hiddenOp">
           <a href="#about" class="btn">EXPLORE</a>
+        </div>
+        <div class="icon-holder hiddenOp">
           <i class="fa-solid fa-chevron-down"></i>
         </div>
       </div>
-      <div id="about" class="hidden">
+
+      <div id="about">
         <div>
           <h1><span class="list-number">01. </span>About Me</h1>
-          <p>
+          <p class="hidden">
             Hello! I'm Matteo Jakob, a computer enthusiast with a passion for
             creating innovative solutions. With a background in computer science
             and experience in software development, I am dedicated to leveraging
-            my skills to solve complex problems. Whether it's developing
-            cutting-edge software applications or designing robust systems, I am
-            committed to delivering solutions that exceed expectations.<br />
+            my skills to solve complex problems.<br />
             <br />
 
             <span class="list-number">Today</span> I'm constantly working on a
@@ -123,7 +125,7 @@
         </div>
         <img
           id="pfp"
-          src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg"
+          src="img/me.JPG"
           alt=""
         />
       </div>
@@ -133,43 +135,22 @@
         <div class="timeline">
           <div class="timeline-line"></div>
 
-          <div class="timeline1 content">
+          <div class="timeline1 content hidden">
             <h3>2021</h3>
             <p>Computer Science Middle School, Aarau</p>
           </div>
 
-          <div class="timeline4 content">
+          <div class="timeline4 content hidden">
             <h3>2018</h3>
             <p>District School, Muri</p>
           </div>
 
-          <div class="timeline5 content">
+          <div class="timeline5 content hidden">
             <h3>2012</h3>
             <p>Primary school, Kallern</p>
           </div>
         </div>
       </div>
-      <!--
-            old version
-        <div id="experience-content">
-          <div id="timeline">
-            <ul>
-              <li>2012</li>
-              <li>2018</li>
-              <li>2021</li>
-              <li>2024</li>
-              <li>2025</li>
-            </ul>
-          </div>
-          <div>
-            <p>Primary Kallern</p>
-            <p>Bez Muri</p>
-            <p>IMS Aarau</p>
-            <p>IMS-Praxis in: ?</p>
-            <p>Job in: ?</p>
-          </div>
-        </div>
-        -->
 
       <div id="work">
         <h1><span class="list-number">03. </span>Projects</h1>
@@ -178,10 +159,11 @@
             <h2>NumberSystems</h2>
             <img src="img/NmberSystems.png" alt="" class="hidden" />
             <p>
-              Convert numbers into any system with ease on my and my colleague's
+              Convert decimal numbers into any system with ease on my and my colleague's
               website. Our user-friendly interface allows for seamless
               conversion of binary, decimal, hexadecimal, and more. Say goodbye
-              to manual calculations and give it a shot!
+              to manual calculations and give it a shot! <br>
+              I was responsible for the front-end.
             </p>
             <div>
               <ul>
@@ -205,42 +187,12 @@
         </div>
         <div class="card">
           <div class="project-description hidden">
-            <h2>GameCenter</h2>
-            <img src="img/GameCenter.png" alt="" class="hidden" />
+            <h2>Repeatr</h2>
+            <img src="img/Repeatr.png" alt="" class="hidden" />
             <p>
-              With two exciting games to choose from, Battleship and Pong,
-              you'll never run out of fun. Challenge your friends (pong) or play
-              against the computer (battleships), and see if you have what it
-              takes to come out on top.
-            </p>
-            <div>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-              <div class="project-links">
-                <a
-                  href="https://github.com/BetterMJ/GameCenter"
-                  target="_blank"
-                >
-                  <i class="lni lni-github"></i>
-                </a>
-                <a href="https://gamecenter.matteojakob.com" target="_blank">
-                  <i class="lni lni-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="project-description hidden">
-            <h2>Repeatr - Coming Soon ...</h2>
-            <p class="soon">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Blanditiis quibusdam ipsum temporibus labore excepturi dolorem
-              nihil exercitationem doloremque numquam hic? Modi assumenda iusto
-              eligendi itaque qui earum amet, mollitia dignissimos.
+              Create and revise school work with cards that you create on Repeatr. <br>
+              With a database running in the background, your cards get saved over multiple sessions. <br>
+              It's my personal work.
             </p>
             <div>
               <ul>
@@ -249,6 +201,32 @@
                 <li>JavaScript</li>
                 <li>HTML</li>
                 <li>CSS</li>
+                <li>Node</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/BetterMJ/Repeatr"
+                  target="_blank"
+                >
+                  <i class="lni lni-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="project-description hidden">
+            <h2>TalkWave</h2>
+            <p class="soon">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Blanditiis quibusdam ipsum temporibus labore excepturi dolorem
+              nihil exercitationem doloremque numquam hic? Modi assumenda iusto
+              eligendi itaque qui earum amet, mollitia dignissimos. 
+            </p>
+            <div>
+              <ul>
+                <li>C#</li>
+                <li>NoSQL</li>
               </ul>
             </div>
           </div>
@@ -258,7 +236,7 @@
         >
       </div>
 
-      <div id="contact" class="hidden">
+      <div id="contact">
         <h1><span class="list-number">04. </span>Reach out</h1>
         <p>
           Got a question or just want to say hi? Drop me a message and let's
@@ -304,12 +282,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-      const targetElement = document.getElementById("typed-text");
-      const textToType = "Hey! I'm Matteo Jakob, a Developer.";
-      setTimeout(function () {
-        typeOut(textToType, targetElement);
-      }, 2500);
-    </script>
   </body>
 </html>

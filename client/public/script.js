@@ -1,4 +1,10 @@
 // Welcome Screen animation
+const targetElement = document.getElementById("typed-text");
+  const textToType = "Hey! I'm Matteo Jakob, a Developer.";
+  setTimeout(function () {
+  typeOut(textToType, targetElement);
+}, 700);
+
 function typeOut(text, targetElement) {
   const typingDelay = 30;
   const randomDelayMin = 10;
@@ -53,7 +59,31 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-/*Header Dropdown*/
+// elements animation landing page
+const observer2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("showOp");
+    } else {
+      //entry.target.classList.remove("showOp");
+    }
+  });
+});
+
+const hiddenElements2 = document.querySelectorAll(".hiddenOp");
+hiddenElements2.forEach((el) => observer2.observe(el));
+
+
+//header landing animation
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const hiddenElements = document.querySelectorAll(".hiddenV");
+    hiddenElements.forEach((el) => el.classList.add("showV"));
+  }, 3500);
+});
+
+
+// Header Dropdown
 var dropdownbtn = document.getElementById("dropdown")
 var dropdowncontent = document.getElementById("dropdown-content")
 var dropdownlinks = document.querySelectorAll(".dropdownlink")
